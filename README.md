@@ -11,3 +11,6 @@ https://platform.openai.com/docs/guides/chat
 
 You will need to make a discord application with Bot -> Send/Read messages+channels to allow the bot to see messages.
 https://discord.com/developers/applications
+
+OAuth2 settings for the bot. Set these settings, scroll down and Discord generates a link that can be used to add your bot to discord.
+<img src="https://i.imgur.com/eBjVO4m.png">
