@@ -6,6 +6,8 @@ This bot works using OpenAI's api and Discord.js to make a simple discord bot. Y
 This is currently configured to run using the invite-only GPT4 model but can be modified to run gpt-3.5-turbo by just chaning the model from
 ```'model': "gpt-4"``` to ```'model': "gpt-3.5-turbo"```
 
+The Chatbot's name is NPC and once its in your server you can prompt it by saying "npc, write a story about cat aliens". (theres some extra delay on the gpt4 model)
+
 Docs for the chat completion api from openai
 https://platform.openai.com/docs/guides/chat
 
