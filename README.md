@@ -9,7 +9,7 @@ This is currently configured to run using the invite-only GPT4 model but can be 
 ```
 
 to
-'model': "gpt-3.5-turbo"
+```'model': "gpt-3.5-turbo"```
 
 Docs for the chat completion api from openai
 https://platform.openai.com/docs/guides/chat
