@@ -6,11 +6,12 @@ const token = 'DISCORD_API_KEY'; //discord
 const configuration = new Configuration({
 	apiKey: 'OPENAI_API_KEY', //openai
 });
+
 const client = new Client({ intents:[GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent , GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildMembers] });
 const openai = new OpenAIApi(configuration);
 
 var ai, txt
-var mynpcid = '436084153503711232';
+var mynpcid = 'USER-ID-OF-YOUR-DISCORD-BOT'; // this is used to prevent it from talking to itself
 client.on('ready', async () => {
 	console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -42,9 +43,6 @@ var messages =  defaultMessages
 var ai
 var repeater;
 client.on('messageCreate', async (message) => {
-	if(message.author.id.includes('801845989291851806') && !message.content.toLowerCase().includes('npc, ')){
-		return false
-	}
 	txt = message.content.replace(/[\\$'"]/g, "\\$&")
 
 	if(message.content.toLowerCase().includes('npc:') || 
