@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    build: ./
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - 8081:8081
+    environment:
+    stdin_open: true
+    tty: true
+volumes:
+  db:

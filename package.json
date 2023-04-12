@@ -1,0 +1,35 @@
+{
+  "name": "chatgpt-4-discord-bot",
+  "version": "1.0.0",
+  "description": "Simple discord bot for chat gpt",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hightowertech/ChatGPT-4-Discord-Bot.git"
+  },
+  "keywords": [
+    "gpt4",
+    "chatgpt",
+    "discordbot",
+    "discord"
+  ],
+  "author": "hightowertech & tobi :)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hightowertech/ChatGPT-4-Discord-Bot/issues"
+  },
+  "homepage": "https://github.com/hightowertech/ChatGPT-4-Discord-Bot#readme",
+  "dependencies": {
+    "@discordjs/builders": "^1.6.1",
+    "@types/jest": "^29.5.0",
+    "discord.js": "^14.9.0",
+    "jest": "^29.5.0",
+    "openai": "^3.2.1"
+  }
+}
